@@ -69,9 +69,6 @@ print(y0)
 print(x1)
 print(y1)
 
-## x0 += 7
-## x1 -= 7
-## y1 -= 7
 width = x1 - x0
 height = y1 - y0
 
