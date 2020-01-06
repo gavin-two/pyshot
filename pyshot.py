@@ -45,7 +45,6 @@ hnd = win32gui.GetDesktopWindow()
 if process_list:
     for process_name in process_list:
         if sc_file_name in process_name:
-            print("入った")
             hSelfWnd = win32gui.FindWindow(None, process_name)
             hNextWnd = win32gui.GetWindow(hSelfWnd, GW_HWNDNEXT)
             win32gui.SetWindowPos(hSelfWnd, HWND_BOTTOM, 0, 0, 0, 0, (SWP_HIDEWINDOW))
